@@ -15,7 +15,14 @@
       <button disabled>Craft</button>
     </div>
     <div>
-
+      <div class="graph-container">
+        <ngx-graph
+          [links]="links"
+          [nodes]="nodes"
+          layout="dagre"
+        >
+        </ngx-graph>
+      </div>
     </div>
   </div>
 </section>

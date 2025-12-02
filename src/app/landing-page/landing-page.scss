@@ -28,3 +28,29 @@
   border-radius: 10px;
   border-color: rgb(52, 49, 97);
 }
+
+.graph-container {
+  width: 100%;
+  height: 100vh;
+  background: #0b0f1a; /* dark fantasy tech */
+  padding: 20px;
+}
+
+ngx-graph .node {
+  fill: none !important;
+  stroke: #00f7ff !important;
+  stroke-width: 2px;
+  filter: drop-shadow(0 0 8px #00f7ff);
+}
+
+ngx-graph .edge {
+  stroke: #00f7ff !important;
+  stroke-width: 1.5px;
+  opacity: 0.8;
+}
+
+ngx-graph .node-label {
+  fill: #00f7ff !important;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+}
