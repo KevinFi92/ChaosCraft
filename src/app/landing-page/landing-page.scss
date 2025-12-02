@@ -1,0 +1,30 @@
+.content {
+  max-width: 1920px;
+  margin: 0 50px 0 50px;
+}
+
+.icon {
+  width: 204px;
+  height: 204px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input{
+  background-color: rgb(15, 12, 31);
+  height: 350px;
+  width: 350px;
+  border-radius: 10px;
+  border-color: rgb(52, 49, 97);
+}
