@@ -10,21 +10,15 @@
     <div class="chaos">
     <div class="form">
       <h3>Your Chaos:</h3>
-      <ng-form>
-        <input class="input" type="text" placeholder="Jumbled notes go here...">
-      </ng-form>
-      <button disabled>Craft</button>
+      <form>
+        <input name="userInput" [(ngModel)]="userInput" class="input" type="text" placeholder="Jumbled notes go here...">
+      </form>
+      <button (click)="getUserInput()">Craft</button>
     </div>
-
-      <div>
-        <ngx-graph
-          [links]="links"
-          [nodes]="nodes"
-          layout="dagre"
-        >
+      <div class="graph">
+        <ngx-graph [links]="links" [nodes]="nodes" layout="dagre">
         </ngx-graph>
         </div>
-
     </div>
   </div>
 </section>

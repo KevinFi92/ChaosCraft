@@ -12,6 +12,7 @@ import { NgxGraphModule } from '@swimlane/ngx-graph';
   styleUrl: './landing-page.scss',
 })
 export class LandingPage {
+  userInput: string = '';
 
   nodes = [
     { id: '1', label: 'Hackathon Project' },
@@ -25,4 +26,12 @@ export class LandingPage {
     { source: '1', target: '3' },
     { source: '1', target: '4' }
   ];
+
+  getUserInput() {
+    let input = this.userInput;
+
+
+
+  }
 }
+

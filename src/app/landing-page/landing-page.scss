@@ -1,5 +1,17 @@
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 1920px;
+  width: 100%;
   margin: 0 50px 0 50px;
 }
 
@@ -12,19 +24,25 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .chaos{
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .form {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 10px;
+  border-right: 1px solid rgba(169, 169, 250, 0.15);
 }
 
 .input{
@@ -33,13 +51,17 @@
   width: 350px;
   border-radius: 10px;
   border-color: rgb(52, 49, 97);
+  color: rgb(192, 254, 242);
 }
 
-.graph-container {
+.graph{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
-  height: 50vh;
+  height: 425px;
   background: rgb(19, 14, 29);
-  padding: 20px;
 }
 
 ngx-graph .node {
