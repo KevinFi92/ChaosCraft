@@ -15,17 +15,24 @@ export class LandingPage {
   userInput: string = '';
   @ViewChild('mindMap') mindMap: any;
 
+
+
+  mindMapData: any = [
+    { id: 1, label: 'Node 1'},
+    { id: 2, label: 'Node 2'},
+    { id: 3, label: 'Node 3'}
+  ];
+
   cy: cytoscape.Core | undefined;
 
   ngAfterViewInit(): void {
     this.cy = cytoscape({
       container: this.mindMap.nativeElement,
 
-      elements: [
-        { data: { id: 'a', label: 'Node A' } },
-        { data: { id: 'b', label: 'Node B' } },
-        { data: { id: 'ab', source: 'a', target: 'b' } },
-      ],
+      elements: this.mindMapData.map((node: any) => ({
+        data: { id: node.id, label: node.label }
+      }))
+,
 
       style: [
         {
@@ -51,8 +58,7 @@ export class LandingPage {
       ],
 
       layout: {
-        name: 'grid',
-        rows: 1
+        name: 'circle'
       }
     });
   }
