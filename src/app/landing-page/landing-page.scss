@@ -54,31 +54,3 @@
   color: rgb(192, 254, 242);
 }
 
-.graph{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 425px;
-  background: rgb(19, 14, 29);
-}
-
-ngx-graph .node {
-  fill: none !important;
-  stroke: #00f7ff !important;
-  stroke-width: 2px;
-  filter: drop-shadow(0 0 8px #00f7ff);
-}
-
-ngx-graph .edge {
-  stroke: #00f7ff !important;
-  stroke-width: 1.5px;
-  opacity: 0.8;
-}
-
-ngx-graph .node-label {
-  fill: #00f7ff !important;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 14px;
-}
